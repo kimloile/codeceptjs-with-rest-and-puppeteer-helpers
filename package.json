@@ -1,0 +1,40 @@
+{
+  "name": "api-automation-tests",
+  "version": "1.0.0",
+  "description": "CodeceptJS automation tests with REST helper",
+  "main": "api_test.js",
+  "scripts": {
+    "def": "codeceptjs def",
+    "lint": "eslint . --fix",
+    "test": "codeceptjs run",
+    "api-load-test": "k6 run load-tests/scenario-1.js",
+    "generate-report": "allure generate output"
+  },
+  "keywords": [
+    "codeceptjs",
+    "rest",
+    "wecoden",
+    "kimloile"
+  ],
+  "author": "kimloile620@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-codeceptjs": "^1.1.0",
+    "faker": "^4.1.0",
+    "codeceptjs": "3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "@codeceptjs/ui": "^0.4.2",
+    "@codeceptjs/configure": "^0.6.2",
+    "playwright": "^1.6.2",
+    "puppeteer": "^5.5.0"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.10",
+    "allure": "0.0.0",
+    "allure-commandline": "^2.13.0",
+    "expect": "^26.6.2",
+    "form-data": "^3.0.0"
+  }
+}
